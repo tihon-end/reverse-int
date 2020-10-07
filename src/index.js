@@ -1,6 +1,9 @@
 
 
-const reverse = (number) => {
-  return +String(number).split("").reverse().join("");
+
+
+module.exports = function reverse(number) {
+    var positiveNumber = Math.abs(number);
+    return +String(positiveNumber).split("").reverse().join("");
 };
-reverse(123);
+
